@@ -41,3 +41,8 @@ set listchars=tab:▸\ ,eol:$
 if has("autocmd")
     autocmd BufWritePost .vimrc source $MYVIMRC
 endif
+
+
+"========== Configure plugins =====================
+"---------- NerdTree ------------------------------
+nmap <F2> :NERDTreeToggle<CR>

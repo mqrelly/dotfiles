@@ -11,6 +11,7 @@ set noswapfile
 "--------- Filetype and syntax --------------------
 filetype on
 syntax on
+colorscheme solarized
 
 "---------- Basinc outlook ------------------------
 set number

@@ -1,6 +1,7 @@
 "--------------------------------------------------
 "---------- Activate pathogen from submodule ------
 runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
 
 
 "---------- Backup-, swapfiles --------------------

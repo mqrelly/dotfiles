@@ -1,4 +1,8 @@
 "--------------------------------------------------
+"---------- Activate pathogen from submodule ------
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+
 "---------- Backup-, swapfiles --------------------
 set nobackup
 set writebackup

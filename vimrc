@@ -9,9 +9,10 @@ set nocompatible
 "---------- Backup-, swapfiles --------------------
 set noswapfile
 set backup
-set backupdir=/tmp
+set backupdir=/tmp,.
 
 "------------- Filetype and syntax --------------------
+set fileformats=unix,dos
 filetype on
 syntax on
 
@@ -24,6 +25,7 @@ if has("gui_running")
   set guioptions+=a " Copy selection to clipboard
   set lines=30
   set columns=120
+  set background=light
 endif
 
 colorscheme solarized

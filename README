@@ -1,3 +1,12 @@
 This is just to store my personal vim setup.
 
 I'm pretty noob at vimming, so don't expect anything interesting.
+
+
+TODO
+----
+
+- snippets
+- tags/jump-to-def/code navigation something...
+- finetune filetype settings (indentation, etc.)
+- run selected code/buffer in interpreters (ruby,python)

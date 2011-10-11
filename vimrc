@@ -87,10 +87,15 @@ inoremap <Up> <Nop>
 noremap <Down> <Nop>
 inoremap <Down> <Nop>
 
+"-------- Window switching and ordering ----------
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 "---------- Cool invisible character toggle ------
 nmap <leader>l :set list!<CR>
-set listchars=tab:▸\ ,eol:$
+set listchars=eol:$
 
 "---------- Autosource .vimrc --------------------
 if has("autocmd")
@@ -101,4 +106,5 @@ endif
 "========== Configure plugins =====================
 
 "---------- NerdTree ------------------------------
-nmap <F2> :NERDTreeToggle<CR>
+map <F2> <Esc>:NERDTreeToggle<CR>
+imap <F2> <Esc>:NERDTreeToggle<CR>

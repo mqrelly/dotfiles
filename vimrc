@@ -60,12 +60,16 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-nmap <leader>ns :set nohlsearch<CR>
+nmap <leader>hs :setlocal !hlsearch<CR>
 
 "---------- Indenting -----------------------------
 set autoindent
 set smartindent
 set cindent
+
+vnoremap > >gv
+vnoremap < <gv
+vnoremap = =gv
 
 "---------- Tab stops, and expanding --------------
 set expandtab

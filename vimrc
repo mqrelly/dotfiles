@@ -51,6 +51,12 @@ if has("gui_running")
   set lines=30
   set columns=120
   set background=light
+
+  if has("win32")
+    set guifont=Lucida\ Console,Courier\ New
+  endif
+else
+  set background=dark
 endif
 
 colorscheme solarized

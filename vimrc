@@ -41,6 +41,10 @@ set fileformats=unix,dos
 filetype on
 syntax on
 
+if has("autocmd")
+  filetype indent plugin on
+end
+
 "---------- Basic outlook -------------------------
 set number
 set wildmenu

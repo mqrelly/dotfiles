@@ -34,9 +34,13 @@ nmap <leader>$ :call StripTrailingWhitespaces()<CR>
 "---------- Backup-, swapfiles --------------------
 set noswapfile
 set backup
-set backupdir=/tmp,.
+if has("win32")
+  set backupdir=$HOME\Backups,.
+else
+  set backupdir=/tmp,.
+end
 
-"------------- Filetype and syntax --------------------
+"------------- Filetype and syntax ----------------
 set fileformats=unix,dos
 filetype on
 syntax on
@@ -44,6 +48,11 @@ syntax on
 if has("autocmd")
   filetype indent plugin on
 end
+
+"------------- File encodings ---------------------
+set encoding=utf-8
+setglobal fileencoding=utf-8
+set fileencodings=utf-8
 
 "---------- Basic outlook -------------------------
 set number

@@ -22,7 +22,7 @@ function! Preserve(command)
 endfunction
 
 "---------- StripTrailingWhitespaces --------------
-function StripTrailingWhitespaces()
+function! StripTrailingWhitespaces()
   call Preserve("%s/\\s\\+$//e")
 endfunction
 
@@ -74,6 +74,10 @@ endif
 
 colorscheme solarized
 
+"---------- Status bar ----------------------------
+set laststatus=2  " always visible
+set statusline=%f\ %y%m%=%l/%L\ (%p%%)\ %v
+
 "---------- Searching -----------------------------
 set hlsearch
 set incsearch
@@ -84,7 +88,7 @@ nmap <leader>hs :setlocal !hlsearch<CR>
 "---------- Indenting -----------------------------
 set autoindent
 set smartindent
-set cindent
+set nocindent " no C-indent for default
 
 vnoremap > >gv
 vnoremap < <gv
@@ -96,7 +100,10 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-"------- Remap arrow keys to navigate buffers ----
+"---------- Default BACKSPACE behavior ------------
+set backspace=indent,eol,start
+
+"------- Remap arrow keys to navigate buffers -----
 noremap <Left> :bprevious!<CR>
 inoremap <Left> <Nop>
 noremap <Right> :bnext!<CR>
@@ -106,17 +113,20 @@ inoremap <Up> <Nop>
 noremap <Down> <Nop>
 inoremap <Down> <Nop>
 
-"-------- Window switching and ordering ----------
+noremap <C-Tab> gt
+noremap <C-S-Tab> gT
+
+"-------- Window switching and ordering -----------
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-"---------- Cool invisible character toggle ------
+"---------- Cool invisible character toggle -------
 nmap <leader>l :set list!<CR>
 set listchars=eol:$
 
-"---------- Autosource .vimrc --------------------
+"---------- Autosource .vimrc ---------------------
 if has("autocmd")
   autocmd BufWritePost .vimrc source $MYVIMRC
 endif

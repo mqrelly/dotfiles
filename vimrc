@@ -66,7 +66,9 @@ if has("gui_running")
   set background=light
 
   if has("win32")
-    set guifont=Lucida\ Console,Courier\ New
+    set guifont=UbuntuMono,Lucida\ Console,Inconsolata,Courier\ New
+  else
+    set guifont=UbuntuMono,Inconsolata,DejaVuSansMono
   endif
 else
   set background=dark

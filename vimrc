@@ -60,6 +60,9 @@ set wildmenu
 
 if has("gui_running")
   set guioptions-=T " Remove toolbar
+  set guioptions-=m " Remove menu
+  set guioptions-=e " Use char-based tab pages
+  set guioptions+=c " Use console dialogs, when possible
   set guioptions+=a " Copy selection to clipboard
   set lines=30
   set columns=120

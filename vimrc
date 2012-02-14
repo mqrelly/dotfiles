@@ -47,6 +47,7 @@ syntax on
 
 if has("autocmd")
   filetype indent plugin on
+  set omnifunc=syntaxcomplete#Complete
 end
 
 "------------- File encodings ---------------------
@@ -66,7 +67,7 @@ if has("gui_running")
   set background=light
 
   if has("win32")
-    set guifont=UbuntuMono,Lucida\ Console,Inconsolata,Courier\ New
+    set guifont=Lucida_Console:h10,Ubuntu_Mono:h10,Inconsolata:h11,Courier_New:h9
   else
     set guifont=UbuntuMono,Inconsolata,DejaVuSansMono
   endif
@@ -130,7 +131,11 @@ set listchars=eol:$
 
 "---------- Autosource .vimrc ---------------------
 if has("autocmd")
-  autocmd BufWritePost .vimrc source $MYVIMRC
+  if has("win32")
+    autocmd BufWritePost _vimrc source $MYVIMRC
+  else
+    autocmd BufWritePost .vimrc source $MYVIMRC
+  endif
 endif
 
 

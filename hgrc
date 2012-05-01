@@ -1,0 +1,5 @@
+[ui]
+username = Márk Szabadkai <mqrelly@gmail.com>
+
+[alias]
+ls = log --template '{rev}:{node|short} {desc|firstline}\n'

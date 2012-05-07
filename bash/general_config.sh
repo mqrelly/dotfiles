@@ -5,4 +5,4 @@ alias g=git
 PS1="\[\033[G\]$PS1"
 
 # Load auto-completion files
-source .bash/completion/*
+source ~/.bash/completion/*

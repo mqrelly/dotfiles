@@ -122,6 +122,8 @@ inoremap <Down> <Nop>
 noremap <C-Tab> gt
 noremap <C-S-Tab> gT
 
+set hidden " Allow switching from changed buffer to another.
+
 "-------- Window switching and ordering -----------
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k

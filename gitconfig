@@ -1,9 +1,11 @@
 [user]
-	name = Szabadkia Márk
-	email = mqrelly@gmail.com
+    name = Szabadkia Márk
+    email = mqrelly@gmail.com
 [push]
     default = upstream
 [alias]
-	l = log --oneline
-	comma = commit -a -m
-	st = status --short --branch
+    l = log --oneline
+    comma = commit -a -m
+    st = status --short --branch
+[core]
+    editor = vim

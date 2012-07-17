@@ -2,10 +2,12 @@
     name = Szabadkia Márk
     email = mqrelly@gmail.com
 [push]
-    default = upstream
+    default = tracking
 [alias]
     l = log --oneline
     comma = commit -a -m
     st = status --short --branch
+    br = branch -a
+    co = checkout
 [core]
     editor = vim

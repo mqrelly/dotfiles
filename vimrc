@@ -149,3 +149,6 @@ endif
 "---------- NerdTree ------------------------------
 map <F2> <Esc>:NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>
+
+"---------- TabBar --------------------------------
+nmap <F4> <Esc>:TagbarToggle<CR>

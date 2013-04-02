@@ -7,6 +7,7 @@ TODO
 ----
 
 - snippets
-- tags/jump-to-def/code navigation something...
+- tagbar: config for Markdown
+- tagbar: config for CoffeeScript
 - finetune filetype settings (indentation, etc.)
 - run selected code/buffer in interpreters (ruby,python)

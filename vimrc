@@ -143,6 +143,14 @@ if has("autocmd")
   endif
 endif
 
+"---------- Insert Date and Time ------------------
+nmap <F3> a<C-R>=strftime("%Y.%m.%d %H:%M")<CR><Esc>
+nmap <C-F3> a<C-R>=strftime("%Y.%m.%d")<CR><Esc>
+nmap <S-F3> a<C-R>=strftime("%H:%M")<CR><Esc>
+imap <F3> <C-R>=strftime("%Y.%m.%d %H:%M")<CR><Esc>a
+imap <C-F3> <C-R>=strftime("%Y.%m.%d")<CR><Esc>a
+imap <S-F3> <C-R>=strftime("%H:%M")<CR><Esc>a
+
 
 "========== Configure plugins =====================
 

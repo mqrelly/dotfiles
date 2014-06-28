@@ -9,5 +9,6 @@
     st = status --short --branch
     br = branch -a
     co = checkout
+    sm = submodule
 [core]
     editor = vim

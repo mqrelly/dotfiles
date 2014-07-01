@@ -82,7 +82,7 @@ colorscheme solarized
 
 "---------- Status bar ----------------------------
 set laststatus=2  " always visible
-set statusline=%f\ %y%m%=%{SyntasticStatuslineFlag()}\ %l/%L\ (%p%%)\ %v
+set statusline=%f\ %y%m%=%l/%L\ (%p%%)\ %v
 
 "---------- Searching -----------------------------
 set hlsearch

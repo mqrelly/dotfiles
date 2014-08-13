@@ -5,9 +5,11 @@
     default = tracking
 [alias]
     l = log --oneline
+    ci = commit
     comma = commit -a -m
     st = status --short --branch
-    br = branch -a
+    br = branch
+    bra = branch --all
     co = checkout
     sm = submodule
 [core]

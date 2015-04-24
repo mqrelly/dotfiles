@@ -1,3 +1,6 @@
+# Set Ruby Gem home
+GEM_HOME="$HOME/bin/gems"
+
 # Useful aliases
 alias g=git
 

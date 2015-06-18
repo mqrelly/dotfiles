@@ -13,6 +13,6 @@
     co = checkout
     sm = submodule
 [core]
-    editor = vim
+    editor = nvim
 [color]
 	ui = auto

@@ -109,6 +109,17 @@ set shiftwidth=4
 "---------- Default BACKSPACE behavior ------------
 set backspace=indent,eol,start
 
+"---------- Map Leader to Space -------------------
+let mapleader = "\<Space>"
+
+nnoremap <Leader>w :w<CR>
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 "------- Remap arrow keys to navigate buffers -----
 noremap <Left> :bprevious!<CR>
 inoremap <Left> <Nop>

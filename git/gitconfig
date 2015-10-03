@@ -15,6 +15,7 @@
     bra = branch --all
     co = checkout
     sm = submodule
+    puffo = pull --ff-only --prune
 [core]
     editor = nvim
 [color]

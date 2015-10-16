@@ -16,6 +16,7 @@
     co = checkout
     sm = submodule
     puffo = pull --ff-only --prune
+    my = !git l master..@
 [core]
     editor = nvim
 [color]

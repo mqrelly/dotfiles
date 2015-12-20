@@ -1,5 +1,9 @@
 # Set Ruby Gem home
 GEM_HOME="$HOME/bin/gems"
+export GEM_HOME
+
+PATH="$GEM_HOME/bin:$PATH"
+export PATH
 
 # Useful aliases
 alias g=git

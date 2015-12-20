@@ -14,3 +14,5 @@ PS1="\[\033[G\]$PS1"
 
 # Load auto-completion files
 source ~/.bash/completion/*
+
+__git_complete g __git_main

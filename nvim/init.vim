@@ -143,15 +143,6 @@ nnoremap <C-l> <C-w>l
 nmap <leader>l :set list!<CR>
 set listchars=eol:$
 
-"---------- Autosource .vimrc ---------------------
-if has("autocmd")
-  if has("win32")
-    autocmd BufWritePost _vimrc source $MYVIMRC
-  else
-    autocmd BufWritePost .vimrc source $MYVIMRC
-  endif
-endif
-
 "---------- Insert Date and Time ------------------
 nmap <F3> a<C-R>=strftime("%Y.%m.%d %H:%M")<CR><Esc>
 nmap <C-F3> a<C-R>=strftime("%Y.%m.%d")<CR><Esc>

@@ -67,17 +67,15 @@ if has("gui_running")
   set guioptions+=a " Copy selection to clipboard
   set lines=30
   set columns=120
-  set background=light
 
   if has("win32")
     set guifont=Lucida_Console:h10,Ubuntu_Mono:h10,Inconsolata:h11,Courier_New:h9
   else
     set guifont=UbuntuMono,Inconsolata,DejaVuSansMono
   endif
-else
-  set background=dark
 endif
 
+set background=light
 colorscheme solarized
 
 "---------- Status bar ----------------------------

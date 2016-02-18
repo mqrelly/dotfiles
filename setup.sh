@@ -12,9 +12,10 @@ ln --symbolic --force "$DOTFILES_DIR/vim/vimrc" .vimrc
 rm --force .vim
 ln --symbolic "$DOTFILES_DIR/vim/" .vim
 
-ln --symbolic --force "$DOTFILES_DIR/nvim/nvimrc" .nvimrc
+rm --force .nvimrc
 rm --force .nvim
-ln --symbolic "$DOTFILES_DIR/nvim/" .nvim
+rm --force .config/nvim
+ln --symbolic "$DOTFILES_DIR/nvim/" .config/nvim
 
 ln --symbolic --force "$DOTFILES_DIR/tmux/tmux.conf" .tmux.conf
 

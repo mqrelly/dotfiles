@@ -4,8 +4,8 @@
 [push]
     default = tracking
 [alias]
-    l = log --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
-    ld = log --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset) %C(bold green)(%ad)%C(reset)'
+    l = log --abbrev-commit --decorate --date=relative --format=tformat:'%C(blue)%h%C(reset) %s %C(dim red)- %an%C(reset)%C(yellow)%d%C(reset)'
+    ld = log --abbrev-commit --decorate --date=relative --format=tformat:'%C(blue)%h%C(reset) %s %C(dim red)- %an%C(reset)%C(yellow)%d%C(reset) %C(cyan)(%ad)%C(reset)'
     lg = !git l --graph
     ldg = !git ld --graph
     ci = commit

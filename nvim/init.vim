@@ -154,6 +154,9 @@ imap <S-F3> <C-R>=strftime("%H:%M")<CR><Esc>a
 
 "========== Configure plugins =====================
 
+"---------- Matchit -------------------------------
+runtime matchit.vim
+
 "---------- NerdTree ------------------------------
 map <F2> <Esc>:NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>

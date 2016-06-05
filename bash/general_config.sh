@@ -1,8 +1,4 @@
-# Set Ruby Gem home
-GEM_HOME="$HOME/bin/gems"
-export GEM_HOME
-
-PATH="$GEM_HOME/bin:$PATH"
+PATH="$HOME/node_modules/.bin:$PATH"
 export PATH
 
 # Useful aliases

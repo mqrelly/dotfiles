@@ -9,7 +9,6 @@
     lg = !git l --graph
     ldg = !git ld --graph
     ci = commit
-    comma = commit -a -m
     st = status --short --branch
     br = branch
     bra = branch --all
@@ -17,6 +16,7 @@
     sm = submodule
     puffo = pull --ff-only --prune
     my = !git l master..@
+    amend = commit --amend --no-edit
 [core]
     editor = nvim
 [color]

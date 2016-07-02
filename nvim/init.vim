@@ -160,6 +160,7 @@ runtime matchit.vim
 "---------- NerdTree ------------------------------
 map <F2> <Esc>:NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
 
 "---------- TabBar --------------------------------
 nmap <F8> :TagbarToggle<CR>

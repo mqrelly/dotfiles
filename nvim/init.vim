@@ -1,8 +1,11 @@
 set nocompatible
 
-"---------- Activate pathogen from submodule ------
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+"---------- Activate Vim-Plug ---------------------
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+call plug#end()
 
 
 "========== Custom functions ======================
@@ -161,13 +164,3 @@ runtime matchit.vim
 map <F2> <Esc>:NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
-
-"---------- TabBar --------------------------------
-nmap <F8> :TagbarToggle<CR>
-imap <F8> <Esc>:TagbarToggle<CR>
-
-
-"========== Language specific options =============
-
-let g:clojure_fuzzy_indent = 1
-let g:clojure_align_multiline_strings = 1

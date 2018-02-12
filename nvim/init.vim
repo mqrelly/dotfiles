@@ -36,12 +36,7 @@ nmap <leader>$ :call StripTrailingWhitespaces()<CR>
 
 "---------- Backup-, swapfiles --------------------
 set noswapfile
-set backup
-if has("win32")
-  set backupdir=$HOME\Backups,.
-else
-  set backupdir=/tmp,.
-end
+set nobackup
 
 "------------- Filetype and syntax ----------------
 set fileformats=unix,dos

@@ -1,13 +1,11 @@
-This is just to store my personal vim setup.
-
-I'm pretty noob at vimming, so don't expect anything interesting.
+This is just to store my personal bash, git, vim setup.
 
 
 TODO
 ----
 
-- snippets
-- tagbar: config for Markdown
-- tagbar: config for CoffeeScript
-- finetune filetype settings (indentation, etc.)
-- run selected code/buffer in interpreters (ruby,python)
+- nvim plugins for JS
+- nvim plugins for C#
+- nvim plugins for Rust
+- nvim plugins for Clojure
+- rethink Vim plugins: use a minimal set for occasions when I don't want to install NeoVim.

@@ -5,6 +5,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
 
@@ -159,3 +160,7 @@ runtime matchit.vim
 map <F2> <Esc>:NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
+
+"---------- FZF -----------------------------------
+map <C-P> <Esc>:FZF<CR>
+imap <C-P> <Esc>:FZF<CR>

@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'w0rp/ale'
+Plug 'sbdchd/neoformat'
 call plug#end()
 
 
@@ -188,3 +189,8 @@ endfunction
 
 set laststatus=2  " always visible
 set statusline=%f\ %y%m%=%{AleStatus()}\ %l/%L\ (%p%%)\ %v
+
+"---------- Neoformatter --------------------------
+nmap <S-F> :Neoformat<CR>
+vmap <S-F> :Neoformat<CR>gv
+

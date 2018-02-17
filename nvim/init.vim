@@ -6,6 +6,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'w0rp/ale'
 call plug#end()
 
 
@@ -77,9 +78,6 @@ endif
 set background=light
 colorscheme solarized
 
-"---------- Status bar ----------------------------
-set laststatus=2  " always visible
-set statusline=%f\ %y%m%=%l/%L\ (%p%%)\ %v
 
 "---------- Searching -----------------------------
 set hlsearch
@@ -164,3 +162,29 @@ let NERDTreeQuitOnOpen = 1
 "---------- FZF -----------------------------------
 map <C-P> <Esc>:FZF<CR>
 imap <C-P> <Esc>:FZF<CR>
+
+"---------- ALE -----------------------------------
+let g:ale_sign_error = '⚡'
+let g:ale_sign_warning = '⚠ '
+highlight link ALEErrorSign ErrorMsg
+highlight link ALEWarningSign Search
+
+
+"---------- Status bar ----------------------------
+function! AleStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return printf(
+    \   '%s%d %s%d',
+    \   g:ale_sign_warning,
+    \   all_non_errors,
+    \   g:ale_sign_error,
+    \   all_errors
+    \)
+endfunction
+
+set laststatus=2  " always visible
+set statusline=%f\ %y%m%=%{AleStatus()}\ %l/%L\ (%p%%)\ %v
